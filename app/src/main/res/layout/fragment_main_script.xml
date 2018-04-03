@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#22aa22"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/app_sml"
+        android:gravity="center_vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/app_version"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/bk_auto_coding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#22aa22" >
+
+        <Button
+            android:id="@+id/btn_auto_coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@layout/bk_auto_btn"
+            android:text="@string/txt_btn_auto"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_scirpt_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" >
+    </ListView>
+
+</LinearLayout>

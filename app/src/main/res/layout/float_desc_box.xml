@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@layout/bk_float_toolbar"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+	
+	    <EditText
+	        android:id="@+id/edit_dialog_desc"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:layout_weight="1"
+	        android:background="@layout/bk_params_edit" 
+	        android:textSize="16sp" 
+	        android:hint="@string/dialog_desc_setting"
+	        tools:ignore="LabelFor,TextFields" >
+	    </EditText>
+
+	    <ImageView
+            android:id="@+id/img_desc_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@layout/bk_tool_btn"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/direct_ok"
+            tools:ignore="ContentDescription" />
+
+</LinearLayout>

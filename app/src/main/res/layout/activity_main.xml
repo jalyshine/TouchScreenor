@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id_title_bar_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@layout/bk_main_bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_script"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/MediaButton"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/fg_script_hidden"
+            android:text="@string/btn_main_script"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_main_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/MediaButton"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/fg_task_hidden"
+            android:text="@string/btn_main_task"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/MediaButton"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/fg_setting_hidden"
+            android:text="@string/btn_main_setting"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_main_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/MediaButton"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/fg_help_hidden"
+            android:text="@string/btn_main_help"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

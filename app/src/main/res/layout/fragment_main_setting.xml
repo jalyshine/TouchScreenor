@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_app_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bk_setting_btn"
+        android:drawableEnd="@drawable/click_into"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/setting_app_style"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_script_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bk_setting_btn"
+        android:drawableEnd="@drawable/click_into"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/setting_script_delay"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_page_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bk_setting_btn"
+        android:drawableEnd="@drawable/click_into"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/setting_page_skip"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/chk_use_unicode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bk_setting_btn"
+        android:padding="10dp"
+        android:text="@string/setting_use_unicode"
+        android:textSize="15sp" />
+
+</LinearLayout>

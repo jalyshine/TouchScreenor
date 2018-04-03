@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/detail_task_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/app"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/detail_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/detail_task_icon"
+        android:layout_toEndOf="@+id/detail_task_icon"
+        android:layout_marginStart="10dp" 
+        android:textColor="#115588"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/detail_task_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_task_status"
+        android:layout_alignStart="@+id/detail_task_name" 
+        android:textColor="#888888" />
+
+    <TextView
+        android:id="@+id/tv_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/detail_task_icon"
+        android:layout_below="@+id/detail_task_icon"
+        android:layout_marginTop="10dp"
+        android:text="@string/detail_task_status" />
+
+    <TextView
+        android:id="@+id/detail_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_task_status"
+        android:layout_alignBottom="@+id/tv_task_status"
+        android:layout_toEndOf="@+id/tv_task_params" />
+
+    <TextView
+        android:id="@+id/tv_task_params"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_task_status"
+        android:layout_below="@+id/tv_task_status"
+        android:layout_marginTop="10dp"
+        android:text="@string/detail_task_params" />
+
+    <TextView
+        android:id="@+id/detail_task_params"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_task_params"
+        android:layout_alignBottom="@+id/tv_task_params"
+        android:layout_alignStart="@+id/detail_task_status" />
+
+</RelativeLayout>

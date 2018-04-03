@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">触屏手</string> 
+    <string name="app_version">触屏手 v1.0</string>
+    <string name="welcome_product">Jaly工作室出品</string>
+    
+    <string name="btn_main_script">脚本</string>
+    <string name="btn_main_task">任务</string>
+    <string name="btn_main_setting">设置</string>
+    <string name="btn_main_help">帮助</string>
+    
+    <string name="txt_btn_manual"><u>添加脚本代码</u></string>
+    <string name="txt_btn_auto">创建脚本</string>
+    
+    <string name="menu_script_run">立即运行</string>
+    <string name="menu_script_rnm">重命名</string>
+    <string name="menu_script_del">删除脚本</string>
+    <string name="menu_script_upload">上传脚本</string>
+
+    <string name="menu_task_del">删除任务</string>
+    <string name="menu_task_edt">修改参数</string>
+
+    <string name="insert_script">&lt; /&gt; script</string> 
+    <string name="insert_action">&lt; /&gt; action</string> 
+    <string name="insert_click">&lt; /&gt; click</string> 
+    <string name="insert_input">&lt; /&gt; input</string> 
+    <string name="insert_select">&lt; /&gt; select</string> 
+    <string name="insert_swipe">&lt; /&gt; swipe</string> 
+    <string name="delete_tag">=== DEL</string> 
+
+    <string name="item_app_select">请选择要控制的应用</string>
+    
+    <string name="dialog_view_eidt">请输入脚本名称</string>  
+    
+    <string name="dialog_params_text">设定脚本参数值</string>
+    <string name="dialog_params_time">设定任务启动时间</string>
+
+    <string name="txt_task_add">添加新任务</string>
+    <string name="detail_task_status">运行状态：</string>
+    <string name="detail_task_params">任务参数：</string>
+
+</resources>

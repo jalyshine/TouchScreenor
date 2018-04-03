@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:showDividers="beginning" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="4"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn_code_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" 
+            android:background="@layout/bk_editor_btn" 
+            android:layout_marginEnd="5dp"
+        	android:layout_weight="1"
+            android:src="@drawable/code_undo"
+            tools:ignore="ContentDescription" />
+                   
+        <ImageButton
+            android:id="@+id/btn_code_redo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" 
+            android:background="@layout/bk_editor_btn" 
+            android:src="@drawable/code_redo"
+            android:layout_marginEnd="5dp"
+           	android:layout_weight="1"
+            tools:ignore="ContentDescription" /> 
+        
+        <ImageButton
+            android:id="@+id/btn_code_save"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@layout/bk_editor_btn"
+            android:src="@drawable/code_save"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <LinearLayout
+	        android:layout_width="45dp"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" 
+	        android:background="#dddddd"
+	        android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_insert_action"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/insert_action" 
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btn_insert_click"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/insert_click"
+                android:textStyle="bold"/>
+            
+            <Button
+                android:id="@+id/btn_insert_swipe"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/insert_swipe" 
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btn_insert_input"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/insert_input" 
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btn_insert_select"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/insert_select" 
+                android:textStyle="bold" /> 
+	        
+            <Button
+                android:id="@+id/btn_delete_tag"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+				android:textSize="12sp"
+                android:background="@layout/bk_editor_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="@string/delete_tag" 
+                android:textStyle="bold" />
+            
+        </LinearLayout>
+	    <EditText
+	        android:id="@+id/edit_script_code"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:ems="10"
+	        android:gravity="top"
+	        android:inputType="textMultiLine" 
+	        android:textSize="12sp" 
+	        android:background="@layout/bk_script_editor"
+	        tools:ignore="LabelFor" >
+	
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+
+</LinearLayout>

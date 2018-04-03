@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:background="@layout/bk_float_touch" >
+
+        <ImageButton
+            android:id="@+id/img_direct_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_back"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_direct_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_right"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_direct_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_left"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_direct_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_up"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_direct_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_ok"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/img_direct_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@layout/bk_tool_btn"
+            android:src="@drawable/direct_down"
+            tools:ignore="ContentDescription" />
+
+</RelativeLayout>

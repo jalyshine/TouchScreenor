@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@layout/bk_float_touch"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/edit_input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/edit_input_hint"
+        tools:ignore="TextFields,LabelFor" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_input_cancel"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/edit_input_box"
+        android:layout_below="@+id/edit_input_box"
+        android:background="@layout/bk_dialog_btn"
+        android:drawableStart="@drawable/dialog_cancel"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" 
+        android:text="@string/btn_input_cancel" 
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_input_ok"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/btn_input_cancel"
+        android:layout_alignBottom="@+id/btn_input_cancel"
+        android:layout_alignEnd="@+id/edit_input_box"
+        android:background="@layout/bk_dialog_btn"
+        android:drawableStart="@drawable/dialog_ok"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/btn_input_ok"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="ButtonStyle" />
+
+</RelativeLayout>

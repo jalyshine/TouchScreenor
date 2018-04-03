@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaly.touchscreenor"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="26"/>
+
+    <!-- XUtils3权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 亮屏解锁权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".TouchScreenorApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" > 
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 开机自启动广播接收器
+        <receiver android:name=".sys.BootReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver> 
+        -->
+
+        <activity
+            android:name=".EditScriptActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".SettingApp"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".SettingDelay"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".SettingVerify"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <service android:name=".floatwnd.FloatWndService" >
+        </service>
+        
+        <service android:name=".sys.TaskService" >
+        </service>
+
+        <!-- 输入法相关 -->
+        <activity
+            android:name=".input.ImeSettingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".input.ImeService"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+    </application> 
+
+</manifest>

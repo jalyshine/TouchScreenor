@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menu_script_run" 
+	      android:title="@string/menu_script_run"></item>
+	<item android:id="@+id/menu_script_rnm"
+	      android:title="@string/menu_script_rnm"></item>
+	<item android:id="@+id/menu_script_del" 
+	      android:title="@string/menu_script_del"></item>
+	<item android:id="@+id/menu_script_upload" 
+	      android:title="@string/menu_script_upload"></item>
+	<!-- 
+	<item android:id="@+id/menu_script_tsk"
+	      android:title="@string/menu_script_tsk"></item>
+	 -->
+</menu>

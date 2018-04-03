@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+
+    <string name="txt_tb_touch">触屏</string>
+    <string name="txt_tb_nav">导航</string>
+    <string name="txt_tb_save">提交</string>
+    <string name="txt_tb_reset">重置</string>
+    <string name="txt_tb_shell">执行</string> 
+
+    <string name="txt_tb_app">应用</string>
+    <string name="txt_tb_redo">重做</string>
+    <string name="txt_tb_undo">撤销</string>
+    <string name="txt_tb_input">输入</string>
+    <string name="txt_tb_exit">退出</string>
+    
+    <string name="btn_input_ok">确定</string>
+    <string name="btn_input_cancel">取消</string>
+    
+    <string name="edit_input_hint">自动注入内容</string>
+    <string name="txt_input_face">TouchScreenor Input Method</string>
+
+    <string name="dialog_desc_setting">添加操作描述</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="setting_app_style">目标应用</string>
+    <string name="setting_app_all">所有app</string>
+    <string name="setting_app_sys">仅系统app</string>
+    <string name="setting_app_thd">仅第三方app</string>
+
+    <string name="setting_script_delay">操作延时</string>
+    <string name="setting_start_delay">启动应用延时（ms）</string>
+    <string name="setting_oper_delay">单个操作延时（ms）</string>
+
+    <string name="setting_page_skip">切屏检查</string>
+    <string name="setting_skip_timeout">等待超时（ms）</string>
+    <string name="setting_check_freq">检查频率（ms）</string>
+    <string name="setting_use_unicode">使用Unicode字符集</string> 
+</resources>
